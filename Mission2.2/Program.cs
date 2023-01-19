@@ -42,13 +42,13 @@ namespace Mission2._2
             // printing
             for (int roundNum = 0; roundNum < 11; roundNum++)
             {
-                double percent = ((double)rollTotals[roundNum] / NumOfRolls) * 100;
+                double percent = ((double)rollTotals[roundNum] / NumOfRolls) * 100; // calculate percentage
                 Console.Write((roundNum + 2) + "\t" );
                 int hist = (int)Math.Round(percent);
 
-                for (int count = 0; count < hist; count++)
+                for (int count = 0; count < hist; count++) // create histogram w asterisks
                 {
-                    Console.Write("*");
+                    Console.Write("*"); 
                 }
                 Console.WriteLine();
             }
